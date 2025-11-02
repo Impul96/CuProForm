@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+<defs>
+<linearGradient id="copper" x1="0" x2="1">
+<stop offset="0" stop-color="#bb683e"/>
+<stop offset="1" stop-color="#df8454"/>
+</linearGradient>
+</defs>
+<path d="M10 20c20-18 40-18 60 0" fill="none" stroke="url(#copper)" stroke-width="8" stroke-linecap="round"/>
+</svg>

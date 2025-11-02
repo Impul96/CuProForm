@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — CuProForm</title>
+<link rel="icon" href="images/logo-temp.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css" />
+<script defer src="assets/scripts.js"></script>
+</head>
+<body>
+<header class="header">
+<div class="container nav">
+<a class="brand" href="/"><img src="images/logo-temp.svg" class="logo" alt="" /><span>CuProForm</span></a>
+<nav class="menu">
+<a href="/">Accueil</a>
+<a href="societe.html">Société</a>
+<a href="savoir-faire.html">Savoir‑faire</a>
+<a href="industries.html">Industries</a>
+<a class="active" href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main class="main container grid-2 gap">
+<section class="card">
+<h1 class="page-title">Contact</h1>
+<p>Adresse postale : Rabat, Maroc</p>
+<p>Email : <a href="mailto:contact@cuproform.com" class="link">contact@cuproform.com</a></p>
+
+
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+<input type="hidden" name="form-name" value="contact" />
+<p class="hidden"><label>Ne pas remplir: <input name="bot-field" /></label></p>
+<div class="grid-2 gap">
+<input class="input" type="text" name="nom" placeholder="Nom" required />
+<input class="input" type="email" name="email" placeholder="Email" required />
+</div>
+<input class="input" type="text" name="sujet" placeholder="Sujet" />
+<textarea class="input" rows="6" name="message" placeholder="Message" required></textarea>
+<div class="captcha">
+<div class="h-captcha" data-sitekey="YOUR_HCAPTCHA_SITE_KEY"></div>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</div>
+<button class="btn btn-primary" type="submit">Envoyer</button>
+</form>
+</section>
+
+
+<aside class="card globe">
+<img src="images/globe-cuivre-rabat.png" alt="Globe cuivre/gris centré sur Rabat" />
+</aside>
+</main>
+
+
+<footer class="footer">/* même footer que index */</footer>
+</body>
+</html>

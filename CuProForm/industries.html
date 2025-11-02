@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Industries servies — CuProForm</title>
+<link rel="icon" href="images/logo-temp.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css" />
+<script defer src="assets/scripts.js"></script>
+</head>
+<body>
+<header class="header">
+<div class="container nav">
+<a class="brand" href="/"><img src="images/logo-temp.svg" class="logo" alt="" /><span>CuProForm</span></a>
+<nav class="menu">
+<a href="/">Accueil</a>
+<a href="societe.html">Société</a>
+<a href="savoir-faire.html">Savoir‑faire</a>
+<a class="active" href="industries.html">Industries</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main class="main container">
+<h1 class="page-title">Industries servies</h1>
+
+
+<section class="grid-3 gap">
+<div class="card">
+<h3>CVC / HVAC</h3>
+<p>Confort thermique, chauffage, refroidissement.</p>
+</div>
+<div class="card">
+<h3>Agroalimentaire</h3>
+<p>Régulation de température, hygiène et traçabilité.</p>
+</div>
+<div class="card">
+<h3>Énergie</h3>
+<p>Busbars, connecteurs, transport d’électricité.</p>
+</div>
+</section>
+
+
+<section class="gallery card">
+<div class="tabs">
+<button class="tab active" data-filter="hvac">CVC / HVAC</button>
+<button class="tab" data-filter="agro">Agroalimentaire</button>
+<button class="tab" data-filter="energie">Énergie</button>
+</div>
+<div class="grid-images" id="gallery">
+<img data-cat="hvac" src="images/coil-placeholder.jpg" alt="HVAC" />
+<img data-cat="agro" src="images/coil-placeholder.jpg" alt="Agro" hidden />
+<img data-cat="energie" src="images/coil-placeholder.jpg" alt="Énergie" hidden />
+</div>
+</section>
+
+
+<section class="card trust">
+<div class="muted">Ils nous font confiance</div>
+<div class="logos">
+<span class="badge">Client A</span>
+<span class="badge">Client B</span>
+<span class="badge">Client C</span>
+</div>
+</section>
+</main>
+
+
+<footer class="footer">/* même footer que index */</footer>
+</body>
+</html>
