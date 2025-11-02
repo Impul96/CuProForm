@@ -1,60 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Contact — CuProForm</title>
-<link rel="icon" href="images/logo-temp.svg" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css" />
-<script defer src="assets/scripts.js"></script>
-</head>
-<body>
-<header class="header">
-<div class="container nav">
-<a class="brand" href="/"><img src="images/logo-temp.svg" class="logo" alt="" /><span>CuProForm</span></a>
-<nav class="menu">
-<a href="/">Accueil</a>
-<a href="societe.html">Société</a>
-<a href="savoir-faire.html">Savoir‑faire</a>
-<a href="industries.html">Industries</a>
-<a class="active" href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CuProForm | Contact</title>
+    <meta
+      name="description"
+      content="Contactez CuProForm à Rabat : adresse, email, formulaire avec captcha et liens vers YouTube et LinkedIn."
+    />
+    <link rel="icon" href="images/logo-temp.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/scripts.js"></script>
+  </head>
+  <body data-lang="fr">
+    <header class="site-header">
+      <div class="top-ribbon">
+        <div class="container ribbon-content">
+          <a class="brand" href="index.html">
+            <img src="images/logo-temp.svg" alt="CuProForm" class="logo" />
+            <span>
+              CuProForm
+              <em>Formage tubes cuivre & alliages</em>
+            </span>
+          </a>
+          <nav class="menu">
+            <a href="index.html" data-lang="fr">Accueil</a>
+            <a href="societe.html" data-lang="fr">Société</a>
+            <a href="savoir-faire.html" data-lang="fr">Savoir-faire</a>
+            <a href="industries.html" data-lang="fr">Industries</a>
+            <a href="contact.html" class="active" data-lang="fr">Contact</a>
+            <a href="index.html" data-lang="en">Home</a>
+            <a href="societe.html" data-lang="en">Company</a>
+            <a href="savoir-faire.html" data-lang="en">Expertise</a>
+            <a href="industries.html" data-lang="en">Industries</a>
+            <a href="contact.html" class="active" data-lang="en">Contact</a>
+          </nav>
+          <button type="button" class="lang-toggle" aria-label="Afficher la version anglaise">FR</button>
+        </div>
+      </div>
+    </header>
 
+    <main class="main">
+      <div class="container">
+        <h1 class="section-title" data-lang="fr">Contact</h1>
+        <h1 class="section-title" data-lang="en">Contact</h1>
+        <p class="section-subtitle" data-lang="fr">Parlons ensemble de vos projets de cintrage, end-forming et assemblage cuivre.</p>
+        <p class="section-subtitle" data-lang="en">Let's discuss your copper bending, end-forming and assembly projects.</p>
 
-<main class="main container grid-2 gap">
-<section class="card">
-<h1 class="page-title">Contact</h1>
-<p>Adresse postale : Rabat, Maroc</p>
-<p>Email : <a href="mailto:contact@cuproform.com" class="link">contact@cuproform.com</a></p>
+        <div class="contact-grid">
+          <div class="form-card">
+            <h2 class="section-title" data-lang="fr">Formulaire</h2>
+            <h2 class="section-title" data-lang="en">Contact form</h2>
+            <form>
+              <div class="form-group">
+                <label for="name" data-lang="fr">Nom et prénom</label>
+                <label for="name" data-lang="en">Full name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="company" data-lang="fr">Entreprise</label>
+                <label for="company" data-lang="en">Company</label>
+                <input id="company" name="company" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-lang="fr">Email</label>
+                <label for="email" data-lang="en">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message" data-lang="fr">Votre besoin</label>
+                <label for="message" data-lang="en">Your requirements</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <span data-lang="fr">Captcha gratuit</span>
+                <span data-lang="en">Free captcha</span>
+                <div class="captcha">
+                  <span data-captcha-question aria-live="polite"></span>
+                  <input id="captcha" type="text" inputmode="numeric" required />
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">
+                <span data-lang="fr">Envoyer</span>
+                <span data-lang="en">Send</span>
+              </button>
+              <div class="form-message" role="status" aria-live="polite"></div>
+            </form>
+          </div>
 
+          <div class="globe">
+            <h2 class="section-title" data-lang="fr">Coordonnées</h2>
+            <h2 class="section-title" data-lang="en">Contact details</h2>
+            <p data-lang="fr">Technopark Rabat, Rocade de Rabat, 11100 Rabat, Maroc</p>
+            <p data-lang="en">Technopark Rabat, Rocade de Rabat, 11100 Rabat, Morocco</p>
+            <p>
+              <a href="mailto:contact@cuproform.com">contact@cuproform.com</a>
+            </p>
+            <p data-lang="fr">Retrouvez-nous sur</p>
+            <p data-lang="en">Follow us on</p>
+            <p>
+              <a href="https://www.youtube.com">YouTube</a> ·
+              <a href="https://www.linkedin.com">LinkedIn</a>
+            </p>
+            <img src="images/globe.png" alt="Globe centré sur l'Afrique et l'Europe avec un marqueur Rabat" />
+          </div>
+        </div>
+      </div>
+    </main>
 
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
-<input type="hidden" name="form-name" value="contact" />
-<p class="hidden"><label>Ne pas remplir: <input name="bot-field" /></label></p>
-<div class="grid-2 gap">
-<input class="input" type="text" name="nom" placeholder="Nom" required />
-<input class="input" type="email" name="email" placeholder="Email" required />
-</div>
-<input class="input" type="text" name="sujet" placeholder="Sujet" />
-<textarea class="input" rows="6" name="message" placeholder="Message" required></textarea>
-<div class="captcha">
-<div class="h-captcha" data-sitekey="YOUR_HCAPTCHA_SITE_KEY"></div>
-<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-</div>
-<button class="btn btn-primary" type="submit">Envoyer</button>
-</form>
-</section>
-
-
-<aside class="card globe">
-<img src="images/globe-cuivre-rabat.png" alt="Globe cuivre/gris centré sur Rabat" />
-</aside>
-</main>
-
-
-<footer class="footer">/* même footer que index */</footer>
-</body>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo-temp.svg" alt="CuProForm" />
+          <div>
+            <div>CuProForm</div>
+            <div data-lang="fr">Du prototype à la grande série</div>
+            <div data-lang="en">From prototype to high-volume</div>
+          </div>
+        </div>
+        <div>
+          <div><strong data-lang="fr">Adresse</strong><strong data-lang="en">Address</strong></div>
+          <div data-lang="fr">Technopark Rabat, Maroc</div>
+          <div data-lang="en">Technopark Rabat, Morocco</div>
+          <div style="margin-top: 8px"><strong>Email</strong></div>
+          <a href="mailto:contact@cuproform.com">contact@cuproform.com</a>
+        </div>
+        <div class="icons">
+          <a aria-label="YouTube" href="https://www.youtube.com" class="icon yt"></a>
+          <a aria-label="LinkedIn" href="https://www.linkedin.com" class="icon in"></a>
+        </div>
+      </div>
+      <div class="copyright">© <span id="y"></span> CuProForm. All rights reserved.</div>
+    </footer>
+  </body>
 </html>
