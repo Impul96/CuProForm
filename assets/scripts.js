@@ -48,15 +48,15 @@ if (stepList) {
 }
 
 // Galerie par onglets
-const tabs = document.querySelectorAll('.tab');
+const filterButtons = document.querySelectorAll('.filter-btn');
 const gallery = document.getElementById('gallery');
-if (tabs.length && gallery) {
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      tabs.forEach((t) => t.classList.toggle('active', t === tab));
-      const id = tab.dataset.filter;
-      gallery.querySelectorAll('img').forEach((img) => {
-        img.hidden = img.getAttribute('data-cat') !== id;
+if (filterButtons.length && gallery) {
+  filterButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach((b) => b.classList.toggle('active', b === btn));
+      const id = btn.dataset.filter;
+      gallery.querySelectorAll('[data-cat]').forEach((item) => {
+        item.hidden = item.getAttribute('data-cat') !== id;
       });
     });
   });
@@ -71,7 +71,7 @@ if (captchaQuestion) {
   function generate() {
     const a = Math.floor(Math.random() * 8) + 2;
     const b = Math.floor(Math.random() * 8) + 2;
-    captchaQuestion.textContent = `${a} + ${b} = ?`;
+    captchaQuestion.textContent = `${a} + ${b} =`;
     captchaQuestion.dataset.answer = (a + b).toString();
     if (input) input.value = '';
   }

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">CuProForming logo</title>
+  <desc id="desc">Stylised copper tube forming symbol for CuProForming.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4d6bd" />
+      <stop offset="50%" stop-color="#d59657" />
+      <stop offset="100%" stop-color="#a15a23" />
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4f5f7" />
+      <stop offset="100%" stop-color="#c7ced8" />
+    </linearGradient>
+    <clipPath id="clip">
+      <circle cx="48" cy="48" r="42" />
+    </clipPath>
+  </defs>
+  <circle cx="48" cy="48" r="44" fill="url(#metal)" stroke="rgba(255,255,255,0.6)" stroke-width="4" />
+  <g clip-path="url(#clip)">
+    <rect x="6" y="6" width="84" height="84" fill="url(#grad)" rx="42" />
+    <path
+      d="M22 68c0-15.46 12.54-28 28-28s28-12.54 28-28"
+      fill="none"
+      stroke="#fff"
+      stroke-width="6"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+    <path
+      d="M18 54c4.5-17.6 20.52-30 38.7-30H76"
+      fill="none"
+      stroke="#3b4754"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.25"
+    />
+    <path
+      d="M26 74c8 8 18.44 12 28 12 14 0 22-8 22-18 0-8.84-5.84-14-14-14-9.94 0-14 8.06-14 14 0 5.06 3.08 8.74 7.6 8.74 4.86 0 7.4-3.08 7.4-6.74"
+      fill="none"
+      stroke="#fff"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.75"
+    />
+  </g>
+  <circle cx="48" cy="48" r="44" fill="none" stroke="rgba(161,90,35,0.4)" stroke-width="4" />
+</svg>
